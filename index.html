@@ -149,6 +149,25 @@ li {
   nav li a { font-size: 16px; margin-bottom: 10px; }
 }
 </style>
+    #top {
+  position: relative;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+#top::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* 半透明の黒オーバーレイ */
+  z-index: 0;
+}
+
+#top h2, #top p {
+  position: relative;
+  z-index: 1; /* 文字をオーバーレイの上に出す */
+}
 }</style>
 </head>
 <body>
