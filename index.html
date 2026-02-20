@@ -104,7 +104,36 @@ li {
   #top p { font-size: 18px; }
   nav li a { font-size: 18px; }
 }
-</style>
+    @media (max-width: 600px) {
+  header {
+    flex-direction: column; /* ロゴとナビを縦並びにする */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: 20px; /* ロゴと文字の間隔 */
+  }
+
+  #top {
+    padding: 100px 20px 50px; /* 上下余白調整 */
+    text-align: center;
+  }
+
+  #top h2 {
+    font-size: 48px;
+  }
+
+  #top p {
+    font-size: 18px;
+  }
+
+  nav li a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}</style>
 </head>
 <body>
 
